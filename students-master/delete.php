@@ -1,6 +1,6 @@
 <?php
 include('config.php');
-
+//uiyiu
 $delete_record = $_GET['del'];
 
 $query ="DELETE FROM dbo.u_reg WHERE rollno='$delete_record'";
