@@ -1,8 +1,8 @@
 <?php
 	include('config.php');
 	
-	$edit_record=$_GET['id'];
-	$query1="SELECT * FROM dbo.sunbakery1 WHERE id='$edit_record'";
+	$edit_record=$_GET['phonenumber'];
+	$query1="SELECT * FROM dbo.sunbakery1 WHERE phonenumber='$edit_record'";
 	$getResults= sqlsrv_query($conn,$query1);
 
 
@@ -25,7 +25,7 @@
 	
 	<body>
 	<div class="container">
-		<form method="POST" action="edit.php?edit_form=<?php echo $id;?>">
+		<form method="POST" action="edit.php?edit_form=<?php echo $phonenumber;?>">
 			<table width="500" border="0" align="center">
 				<tr>	
 					<th colspan="4"><h1>Updating Form</h1></th>
@@ -73,7 +73,7 @@
 <?php
 	if(isset($_POST['update'])){
 	
-		$edit_record1 = $_GET['id'];
+		$edit_record1 = $_GET['phonenumber'];
 		
 		$customername = $row['customername1'];
     		$phonenumber = $row['phonenumber1'];
@@ -82,7 +82,7 @@
     		$productquantity = $row['productquantity1'];
 		
 		$query2="UPDATE dbo.sunbakery1 SET customername='$customername',phonenumber='$phonenumber',pickupdate='$pickupdate', 
-		productordered='$productordered', 'productquantity='$productquantity' WHERE id='$edit_record1'";
+		productordered='$productordered', 'productquantity='$productquantity' WHERE phonenumber='$edit_record1'";
 		//Update dbo.u_reg set username='anjana',fname='vishkarma',rollno='1111'where rollno='123456';
 		$getResult1=sqlsrv_query($conn, $query2);
 		
