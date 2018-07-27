@@ -8,5 +8,5 @@ $connectionOptions = array(
 //Establishes the connection
 $conn = sqlsrv_connect($serverName, $connectionOptions);
 				
-				
+	echo "<script>alert($conn);</script>";			
 ?>
