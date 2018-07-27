@@ -43,7 +43,7 @@ $getResults= sqlsrv_query($conn, $tsql);
 
 //if($conn->query($que)=== true)
 //{
-	echo "<font colour='white'><center><b>The follwing Data has been inserted into our databse:</b></center>";
+	echo "<center><b><font colour='white'>The follwing Data has been inserted into our databse</b></center>";
 
 //}
 }
