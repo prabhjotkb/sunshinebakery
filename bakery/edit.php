@@ -73,7 +73,7 @@
 <?php
 	if(isset($_POST['update'])){
 	
-		$edit_record1 = $_GET['edit_form'];
+		$edit_record1 = $_GET['id'];
 		
 		$customername = $row['customername1'];
     		$phonenumber = $row['phonenumber1'];
