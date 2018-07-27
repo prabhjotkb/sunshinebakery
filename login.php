@@ -13,15 +13,14 @@ session_start();
     <form method="post" action="login.php">
     <center><input type="text" name="user" placeholder="Enter your username"><br>
     <input type="password" name="pass" placeholder="Enter your password"><br><br>
-    <input type="submit" name="submit" value="sign in"></center>
+    <input type="submit" name="submit" value="sign in" onclick="bakery/index.php"></center>
     </form>
     </body>
 </html>
 
 <?php
 
-	$con=mysql_connect("localhost","root","");
-	$db=mysql_select_db('students',$con);
+include('config.php');
 		if(isset($_POST['login'])){
 			$admin_name=$_SESSION['admin_name']=$_POST['admin_name'];
 			$admin_pass=$_POST['admin_pass'];
