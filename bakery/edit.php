@@ -27,7 +27,7 @@
 	<body>
 	<div class="container">
 	<?php include 'header.php'?>
-		<form method="POST" action="edit.php?edit_form=<?php echo $s_school;?>">
+		<form method="POST" action="edit.php?edit_form=<?php echo $customername;?>">
 			<table width="500" border="0" align="center">
 				<tr>	
 					<th colspan="4"><h1>Updating Form</h1></th>
