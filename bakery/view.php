@@ -62,6 +62,6 @@
 			<?php } ?>
 		</table>
 		<?php include 'footer.php'?>
-		<div>
+		</div>
 	</body>
 </html>
