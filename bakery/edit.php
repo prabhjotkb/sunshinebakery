@@ -1,8 +1,8 @@
 <?php
-	include('sunshinebakery.php');
+	include('config.php');
 	
 	$edit_record=$_GET['edit'];
-	$query1="SELECT * FROM dbo.sunshinebakery WHERE rollno='$edit_record'";
+	$query1="SELECT * FROM dbo.sunbakery1 WHERE id='$edit_record'";
 	$getResults= sqlsrv_query($conn,$query1);
 
 
@@ -78,13 +78,13 @@
 	
 		$edit_record1 = $_GET['edit_form'];
 		
-		$customername = $row['customername'];
-    $phonenumber = $row['phonenumber'];
-    $pickupdate = $row['pickupdate'];
-    $productordered = $row['productordered'];
-    $productquantity = $row['productquantity'];
+		$customername = $row['customername1'];
+    $phonenumber = $row['phonenumber1'];
+    $pickupdate = $row['pickupdate1'];
+    $productordered = $row['productordered1'];
+    $productquantity = $row['productquantity1'];
 		
-		$query2="UPDATE dbo.sunshinebakery SET customername='$customername',phonenumber='$phonenumber',pickupdate='$pickupdate', productordered='$productordered', 'productquantity='$productquantity' WHERE rollno='$edit_record1'";
+		$query2="UPDATE dbo.sunbakery1 SET customername='$customername',phonenumber='$phonenumber',pickupdate='$pickupdate', productordered='$productordered', 'productquantity='$productquantity' WHERE id='$edit_record1'";
 		//Update dbo.u_reg set username='anjana',fname='vishkarma',rollno='1111'where rollno='123456';
 		$getResult1=sqlsrv_query($conn, $query2);
 		
