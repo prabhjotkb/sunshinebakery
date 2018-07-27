@@ -22,7 +22,7 @@
 				</tr >
 				<tr>
 					<td align="right"><label>Pick-Up Date:</label></td>
-					<td><input type="text" name="pickupdate"><font color="red"><?php echo @$_GET['pickupdate']; ?></font></td>
+					<td><input type="date" name="pickupdate"><font color="red"><?php echo @$_GET['pickupdate']; ?></font></td>
 				</tr>
 				<tr >
 					<td align="right"><label>Product Ordered</label></td>
