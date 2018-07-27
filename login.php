@@ -11,10 +11,11 @@ session_start();
 <body>
     <h1>Sunshine Bakery</h1>
     <form method="post" action="login.php">
-    <center><input type="text" name="admin_user" placeholder="Enter your username"><br>
-    <input type="password" name="admin_pass" placeholder="Enter your password"><br><br>
+    <center><input type="text" name="admin_user" placeholder="Enter your username"><font color="red"><?php echo @$_GET['user']?></font><br>
+    <input type="password" name="admin_pass" placeholder="Enter your password"><font color="red"><?php echo @$_GET['pass']?></font><br><br>
     <input type="submit" name="submit" value="sign in" onclick="bakery/index.php"></center>
     </form>
+	<center><?php echo @$_GET['error'] ?></center>
     </body>
 </html>
 
