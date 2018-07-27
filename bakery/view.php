@@ -53,7 +53,7 @@
 				<td><?php echo $productordered; ?></td>
 				<td><?php echo $productquantity; ?></td>
 				<td><a href ='delete.php?del=<?php echo $phonenumber; ?>'>Delete</a></td>
-				<td><a href='edit.php?edit=<?php echo $phonenumber ?>'>Edit</a></td>
+				<td><a href='edit.php?edit=<?php echo $phonenumber; ?>'>Edit</a></td>
 				
 					</tr>
 			<?php } ?>
