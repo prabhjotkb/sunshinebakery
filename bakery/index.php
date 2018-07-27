@@ -1,6 +1,6 @@
 <html>
 	<head>
-		<title>Registration Form</title>
+		<title>Bakery Form</title>
 		<link rel="stylesheet" href="style.css">
 	</head>
 	
@@ -65,40 +65,41 @@ include('config.php');
  
  if (isset($_POST['submit']))
  {
- $student_name=$_POST['user_name'];
- $student_father=$_POST['father_name'];
- $student_school=$_POST['school_name'];
- $student_roll=$_POST['roll_no'];
- $student_class=$_POST['class_name'];
+ $customername=$_POST['customername'];
+ $phonenumber=$_POST['phonenumber'];
+ $pickupdate=$_POST['pickupdate'];
+ $productordered=$_POST['productordered'];
+ $productquantity=$_POST['productquantity'];
  
- if($student_name=='')
+ if($customername=='')
  {
-	echo "<script>window.open('index.php?name=name is required','_self');</script>";
+	echo "<script>window.open('index.php?customername=customer name is required','_self');</script>";
 	exit();
  }
- if($student_father=='')
+ if($phonenumber=='')
  {
-	echo "<script>window.open('index.php?father=father's name is required','_self');</script>";
+	echo "<script>window.open('index.php?phonenumber=phone number is required','_self');</script>";
 	exit();
  }
-if($student_school=='')
+if($pickupdate=='')
  {
-	echo "<script>window.open('index.php?school= school name is required','_self');</script>";
+	echo "<script>window.open('index.php?pickupdate=pick-up date is required','_self');</script>";
 	exit();
  }
-if($student_roll=='')
+if($productordered=='null')
  {
-	echo "<script>window.open('index.php?roll=roll no. is required','_self');</script>";
+	echo "<script>window.open('index.php?productordered=product ordered is required','_self');</script>";
 	exit();
  }
- if($student_class=='null')
+if($productquantity=='')
  {
-	echo "<script>window.open('index.php?class=class is required','_self');</script>";
+	echo "<script>window.open('index.php?productquantity=product quantity is required','_self');</script>";
 	exit();
  }
 
 	 
-	 $tsql="insert into u_reg (username,fname,rollno)values('$student_name','$student_father','$student_roll')";
+	 $tsql="insert into sunbakery1 (customername, phonenumber, pickupdate, productordered, productquantity)
+	 values('$customername', '$phonenumber', '$pickupdate','$productordered','$productquantity')";
 $getResults= sqlsrv_query($conn, $tsql);
 	 
 
@@ -106,7 +107,8 @@ $getResults= sqlsrv_query($conn, $tsql);
 //if($conn->query($que)=== true)
 //{
 	echo "<center><b>The follwing Data has been inserted into our databse:</b></center>";
-	echo "<table width='500px'align='center' border='4'><tr><td>$student_name</td><td>$student_father</td><td>$student_school</td><td>$student_roll</td><td>$student_class</td></tr></table>";                      
+	echo "<table width='500px'align='center' border='4'><tr><td>$customername</td><td>$phonenumber</td><td>$pickupdate
+	</td><td>$$productordered</td><td>productquantity</td></tr></table>";                      
 //}
 
 
