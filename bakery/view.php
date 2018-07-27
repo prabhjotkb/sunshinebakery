@@ -7,10 +7,10 @@
 		<center><font color='red' size='6'><?php echo @$_GET['delete'];?>
 		<?php /*echo @$_GET['updated']; ?><?php echo @$_GET['logged']; */?>
 			</font></center>
-		<br><br><table align="center" width='900' border='4'>
+		<br><br><table align="center" width='900' border='4'  bgcolor="yellow">
 			<tr>
 			
-					<th colspan="20" align="center" bgcolor="yellow"><h1>Viewing all the record</h1></th>
+					<th colspan="20" align="center"><h1>Viewing all the record</h1></th>
 				
 			</tr>
 			<tr align="center">
