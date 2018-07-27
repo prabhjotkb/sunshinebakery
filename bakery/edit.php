@@ -84,7 +84,7 @@
 		$query2="UPDATE dbo.sunbakery1 SET customername='$customername',phonenumber='$phonenumber',pickupdate='$pickupdate', 
 		productordered='$productordered', 'productquantity='$productquantity' WHERE id='$edit_record1'";
 		//Update dbo.u_reg set username='anjana',fname='vishkarma',rollno='1111'where rollno='123456';
-		$getResult1=sqlsrv_query($conn, $query2);
+		$getResults1=sqlsrv_query($conn, $query2);
 		
 		echo "<script>";
         	echo "window.alert('Data Updated')
