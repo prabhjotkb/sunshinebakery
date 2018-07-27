@@ -54,9 +54,9 @@
 				<td><?php echo $pickupdate; ?></td>
 				<td><?php echo $productordered; ?></td>
 				<td><?php echo $productquantity; ?></td>
-				<td><a href ='delete.php?del=<?php echo $roll_no; ?>'>Delete</a></td>
-				<td><a href='edit.php?edit=<?php echo $roll_no ?>'>Edit</a></td>
-				<td><a href='view.php?detail=<?php echo $u_id ?>'>Detail</a></td>
+				<td><a href ='delete.php?del=<?php echo $id; ?>'>Delete</a></td>
+				<td><a href='edit.php?edit=<?php echo $id ?>'>Edit</a></td>
+				<td><a href='view.php?detail=<?php echo $id?>'>Detail</a></td>
 				
 					</tr>
 			<?php } ?>
