@@ -6,7 +6,6 @@
 	
 	<body>
 	<div class="container">
-	<?php include 'header.php'?>
 	
 		<form method="POST" action="index.php">
 			<table  border="0" align="center">
@@ -27,8 +26,7 @@
 				</tr>
 				<tr >
 					<td align="right"><label>Product Ordered</label></td>
-					<td><input type="text" name="productordered"><font color="red"><?php echo @$_GET['productordered']; ?></font></td>
-				<td><select name="productordered">
+					<td><select name="productordered">
     
                 <option>Select your product</option>
                 <option>Cakes</option>
@@ -50,7 +48,6 @@
 			</table>
 			
 		</form>
-		<?php include 'footer.php'  ?>
         </div>
 	</body>
 </html>
@@ -108,11 +105,7 @@ $getResults= sqlsrv_query($conn, $tsql);
 //{
 	echo "<center><b>The follwing Data has been inserted into our databse:</b></center>";
 	echo "<table width='500px'align='center' border='4'><tr><td>$customername</td><td>$phonenumber</td><td>$pickupdate
-	</td><td>$$productordered</td><td>$productquantity</td></tr></table>";                      
+	</td><td>$productordered</td><td>$productquantity</td></tr></table>";                      
 //}
-
-
 }
-
-
 ?>
