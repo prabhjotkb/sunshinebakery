@@ -1,9 +1,9 @@
 <?php
-include('sunshinebakery.php');
+include('config.php');
 
 $delete_record = $_GET['del'];
 
-$query ="DELETE FROM dbo.sunshinebakery WHERE rollno='$delete_record'";
+$query ="DELETE FROM dbo.sunbakery1 WHERE id='$delete_record'";
 
 $getResult=sqlsrv_query($conn, $query);
 
