@@ -11,8 +11,8 @@ session_start();
 <body>
     <h1>Sunshine Bakery</h1>
     <form method="post" action="login.php">
-    <center><input type="text" name="user" placeholder="Enter your username"><br>
-    <input type="password" name="pass" placeholder="Enter your password"><br><br>
+    <center><input type="text" name="admin_user" placeholder="Enter your username"><br>
+    <input type="password" name="admin_pass" placeholder="Enter your password"><br><br>
     <input type="submit" name="submit" value="sign in" onclick="bakery/index.php"></center>
     </form>
     </body>
