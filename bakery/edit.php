@@ -81,8 +81,8 @@
     		$product_ordered = $row['productordered1'];
     		$product_quantity = $row['productquantity1'];
 		
-		$query2="UPDATE dbo.sunbakery1 SET customername='$customername',phonenumber='$phonenumber',pickupdate='$pickupdate', 
-		productordered='$productordered', 'productquantity='$productquantity' WHERE id='$edit_record1'";
+		$query2="UPDATE dbo.sunbakery1 SET customername='$customer_name',phonenumber='$phone_number',pickupdate='$pickup_date', 
+		productordered='$product_ordered', 'productquantity='$product_quantity' WHERE id='$edit_record1'";
 		//Update dbo.u_reg set username='anjana',fname='vishkarma',rollno='1111'where rollno='123456';
 		$getResults1=sqlsrv_query($conn, $query2);
 		
