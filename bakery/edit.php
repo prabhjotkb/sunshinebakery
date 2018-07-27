@@ -1,20 +1,19 @@
 <?php
 	include('config.php');
 	
-	$edit_record=$_GET['edit'];
+	$edit_record=$_GET['id'];
 	$query1="SELECT * FROM dbo.sunbakery1 WHERE id='$edit_record'";
 	$getResults= sqlsrv_query($conn,$query1);
 
 
 	while($row=sqlsrv_fetch_array($getResults, SQLSRV_FETCH_ASSOC))
 	{
-    $id = $_POST['id'];
-        
-    $customername=$_POST['customername'];
+   	 $id = $_POST['id'];
+   	 $customername=$_POST['customername'];
 	$phonenumber=$_POST['phonenumber'];
 	$pickupdate=$_POST['pickupdate'];	
-    $productordered=$_POST['productordered'];
-    $productquantity=$_POST['productquantity'];
+   	$productordered=$_POST['productordered'];
+   	$productquantity=$_POST['productquantity'];
 	}
 ?>
 
@@ -77,12 +76,13 @@
 		$edit_record1 = $_GET['edit_form'];
 		
 		$customername = $row['customername1'];
-    $phonenumber = $row['phonenumber1'];
-    $pickupdate = $row['pickupdate1'];
-    $productordered = $row['productordered1'];
-    $productquantity = $row['productquantity1'];
+    		$phonenumber = $row['phonenumber1'];
+    		$pickupdate = $row['pickupdate1'];
+    		$productordered = $row['productordered1'];
+    		$productquantity = $row['productquantity1'];
 		
-		$query2="UPDATE dbo.sunbakery1 SET customername='$customername',phonenumber='$phonenumber',pickupdate='$pickupdate', productordered='$productordered', 'productquantity='$productquantity' WHERE id='$edit_record1'";
+		$query2="UPDATE dbo.sunbakery1 SET customername='$customername',phonenumber='$phonenumber',pickupdate='$pickupdate', 
+		productordered='$productordered', 'productquantity='$productquantity' WHERE id='$edit_record1'";
 		//Update dbo.u_reg set username='anjana',fname='vishkarma',rollno='1111'where rollno='123456';
 		$getResult1=sqlsrv_query($conn, $query2);
 		
