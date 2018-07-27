@@ -1,7 +1,7 @@
 <?php
 include('config.php');
 
-$delete_record = $_GET['delete'];
+$delete_record = $_GET['del'];
 
 $query ="DELETE FROM dbo.sunbakery1 WHERE phonenumber='$delete_record'";
 
