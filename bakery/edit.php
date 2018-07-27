@@ -75,11 +75,11 @@
 	
 		$edit_record1 = $_GET['edit_form'];
 		
-		$customername = $row['customername1'];
-    		$phonenumber = $row['phonenumber1'];
-    		$pickupdate = $row['pickupdate1'];
-    		$productordered = $row['productordered1'];
-    		$productquantity = $row['productquantity1'];
+		$customer_name = $row['customername1'];
+    		$phone_number = $row['phonenumber1'];
+    		$pickup_date = $row['pickupdate1'];
+    		$product_ordered = $row['productordered1'];
+    		$product_quantity = $row['productquantity1'];
 		
 		$query2="UPDATE dbo.sunbakery1 SET customername='$customername',phonenumber='$phonenumber',pickupdate='$pickupdate', 
 		productordered='$productordered', 'productquantity='$productquantity' WHERE id='$edit_record1'";
