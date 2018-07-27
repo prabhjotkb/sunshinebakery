@@ -99,14 +99,20 @@ select {
     background-color: #f1f1f1;
 } 
 input[type=button], input[type=submit], input[type=reset] {
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 16px 32px;
-    text-decoration: none;
-    margin: 4px 2px;
-    cursor: pointer;
-	font-size:20px;
+    border-radius: 4px;
+		          border: 0;
+		          cursor: pointer;
+		          display: inline-block;
+		          font-weight: 400;
+		          height: 3.5em;
+		          line-height: 3.5em;
+		          padding: 0 2em 0 2.375em;
+		          text-align: center;
+		          text-decoration: none;
+		          white-space: nowrap;
+		          text-transform: uppercase;
+		          letter-spacing: 0.325em;
+		          font-size: 0.725em;
 }
 label
 {
