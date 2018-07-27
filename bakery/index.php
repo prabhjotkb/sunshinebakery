@@ -108,7 +108,7 @@ $getResults= sqlsrv_query($conn, $tsql);
 //{
 	echo "<center><b>The follwing Data has been inserted into our databse:</b></center>";
 	echo "<table width='500px'align='center' border='4'><tr><td>$customername</td><td>$phonenumber</td><td>$pickupdate
-	</td><td>$$productordered</td><td>productquantity</td></tr></table>";                      
+	</td><td>$$productordered</td><td>$productquantity</td></tr></table>";                      
 //}
 
 
