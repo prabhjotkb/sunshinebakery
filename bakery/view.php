@@ -16,28 +16,30 @@
 				
 			</tr>
 			<tr align="center">
-				<td>Serial No.</td>
-				<td>Student's Name</td>
-				<td>Father's Name</td>
-				<td>Roll No.</td>
-				<td>Delete</td>
-				<td>Edit</td>
-				<td>Detail</td>
+				<td>id</td>
+				<td>Customer Name</td>
+				<td>Phone Number</td>
+				<td>Pick-up Date</td>
+				<td>Product Ordered</td>
+				<td>Product Quantity</td>
 			</tr>
 	
 			<?php
 			
 			include('config.php');
-			$sqlselect="SELECT * FROM dbo.u_reg";
+			$sqlselect="SELECT * FROM dbo.sunbakery1";
 			$getResults= sqlsrv_query($conn, $sqlselect);
 				
 				$i=1;
 		
 		while ($row = sqlsrv_fetch_array($getResults, SQLSRV_FETCH_ASSOC)) 
 			{
-			 $user_name = $row['username'];
-					$father_name=$row['fname'];
-					$roll_no=$row['rollno'];
+			 $customername = $row['customername'];
+			 $phonenumber=$row['phonenumber'];
+			 $pickupdate=$row['pickupdate'];
+			 $productordered=$row['productordered'];
+			 $productquantity=$row['productquantity'];
+			
 			
 			
 			//echo ($row['id'] . " " . $row['username']. . PHP_EOL);
@@ -47,9 +49,11 @@
 			?>
 				<tr align="center">
 				<td><?php echo $i;$i++; ?></td>
-				<td><?php echo $user_name; ?></td>
-				<td><?php echo $father_name; ?></td>
-				<td><?php echo $roll_no; ?></td>
+				<td><?php echo $customername; ?></td>
+				<td><?php echo $phonenumber; ?></td>
+				<td><?php echo $pickupdate; ?></td>
+				<td><?php echo $productordered; ?></td>
+				<td><?php echo $productquantity; ?></td>
 				<td><a href ='delete.php?del=<?php echo $roll_no; ?>'>Delete</a></td>
 				<td><a href='edit.php?edit=<?php echo $roll_no ?>'>Edit</a></td>
 				<td><a href='view.php?detail=<?php echo $u_id ?>'>Detail</a></td>
@@ -61,12 +65,3 @@
 		<div>
 	</body>
 </html>
-
-
-
-
-
-
-
-
-				
