@@ -1,3 +1,55 @@
+<?php
+include('config.php');
+ 
+ if (isset($_POST['submit']))
+ {
+ $customername=$_POST['customername'];
+ $phonenumber=$_POST['phonenumber'];
+ $pickupdate=$_POST['pickupdate'];
+ $productordered=$_POST['productordered'];
+ $productquantity=$_POST['productquantity'];
+ 
+ if($customername=='')
+ {
+	echo "<script>window.open('index.php?customername=customer name is required','_self');</script>";
+	exit();
+ }
+ if($phonenumber=='')
+ {
+	echo "<script>window.open('index.php?phonenumber=phone number is required','_self');</script>";
+	exit();
+ }
+if($pickupdate=='')
+ {
+	echo "<script>window.open('index.php?pickupdate=pick-up date is required','_self');</script>";
+	exit();
+ }
+if($productordered=='null')
+ {
+	echo "<script>window.open('index.php?productordered=product ordered is required','_self');</script>";
+	exit();
+ }
+if($productquantity=='')
+ {
+	echo "<script>window.open('index.php?productquantity=product quantity is required','_self');</script>";
+	exit();
+ }
+
+	 
+	 $tsql="insert into dbo.sunbakery1 (customername, phonenumber, pickupdate, productordered, productquantity)values('$customername', '$phonenumber', '$pickupdate','$productordered','$productquantity')";
+$getResults= sqlsrv_query($conn, $tsql);
+	 
+
+
+//if($conn->query($que)=== true)
+//{
+	echo "<center><b>The follwing Data has been inserted into our databse:</b></center>";
+	echo "<table width='500px'align='center' border='4'><tr><td>$customername</td><td>$phonenumber</td><td>$pickupdate
+	</td><td>$productordered</td><td>$productquantity</td></tr></table>";                      
+//}
+}
+?>
+
 <html>
 	<head>
 		<title>Bakery Form</title>
@@ -51,61 +103,4 @@
         </div>
 	</body>
 </html>
-<?php
-/*$conn=mysql_connect("localhost","root","");
-$db= mysql_select_db("students",$conn);*/
 
-/*$conn=mysqli_connect("localhost","root","");
-$db=mysqli_select_db($conn,"students");*/
-
-include('config.php');
- 
- if (isset($_POST['submit']))
- {
- $customername=$_POST['customername'];
- $phonenumber=$_POST['phonenumber'];
- $pickupdate=$_POST['pickupdate'];
- $productordered=$_POST['productordered'];
- $productquantity=$_POST['productquantity'];
- 
- if($customername=='')
- {
-	echo "<script>window.open('index.php?customername=customer name is required','_self');</script>";
-	exit();
- }
- if($phonenumber=='')
- {
-	echo "<script>window.open('index.php?phonenumber=phone number is required','_self');</script>";
-	exit();
- }
-if($pickupdate=='')
- {
-	echo "<script>window.open('index.php?pickupdate=pick-up date is required','_self');</script>";
-	exit();
- }
-if($productordered=='null')
- {
-	echo "<script>window.open('index.php?productordered=product ordered is required','_self');</script>";
-	exit();
- }
-if($productquantity=='')
- {
-	echo "<script>window.open('index.php?productquantity=product quantity is required','_self');</script>";
-	exit();
- }
-
-	 
-	 $tsql="insert into sunbakery1 (customername, phonenumber, pickupdate, productordered, productquantity)
-	 values('$customername', '$phonenumber', '$pickupdate','$productordered','$productquantity')";
-$getResults= sqlsrv_query($conn, $tsql);
-	 
-
-
-//if($conn->query($que)=== true)
-//{
-	echo "<center><b>The follwing Data has been inserted into our databse:</b></center>";
-	echo "<table width='500px'align='center' border='4'><tr><td>$customername</td><td>$phonenumber</td><td>$pickupdate
-	</td><td>$productordered</td><td>$productquantity</td></tr></table>";                      
-//}
-}
-?>
