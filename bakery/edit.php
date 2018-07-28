@@ -5,9 +5,9 @@
 
 	$getResults=sqlsrv_query($conn, $query);
        //echo $getResults;
-	$row=sqlsrv_fetch_array( $getResults, SQLSRV_FETCH_ASSOC)
+	while($row=sqlsrv_fetch_array( $getResults, SQLSRV_FETCH_ASSOC))
 	
-   	 $id = $row['id'];
+   	 $edit_id = $row['id'];
    	 $customername=$row['customername'];
 	$phonenumber=$row['phonenumber'];
 	$pickupdate=$row['pickupdate'];	
