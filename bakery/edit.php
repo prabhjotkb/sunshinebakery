@@ -75,7 +75,7 @@
   if(isset($_POST['update'])){
 	
 		$edit_record1 = $_GET['edit_form'];
-		
+		$id_d=$_POST[id1];
 		$customer_name = $_POST['customername1'];
     		$phone_number = $_POST['phonenumber1'];
     		$pickup_date = $_POST['pickupdate1'];
