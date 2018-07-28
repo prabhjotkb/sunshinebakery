@@ -41,7 +41,7 @@
 			 $productquantity=$row['productquantity'];
 			
 			
-			
+		
 			//echo ($row['id'] . " " . $row['username']. . PHP_EOL);
 			
 				
