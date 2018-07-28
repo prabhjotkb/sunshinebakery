@@ -25,7 +25,7 @@
 	
 	<body>
 	<div class="container">
-		<form method="POST" action="edit.php?edit_form=<?php echo $phonenumber;?>">
+		<form method="POST" action="edit.php?edit_form=<?php echo $id;?>">
 			<table width="500" border="0" align="center">
 				<tr>	
 					<th colspan="4"><h1>Updating Form</h1></th>
