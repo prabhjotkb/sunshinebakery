@@ -2,7 +2,7 @@
 	include('config.php');
 	
 	$edit_record=$_GET['edit'];
-echo "<script>alert($edit_record);</script>";
+//echo "<script>alert($edit_record);</script>";
    //echo $edit_record;
 	$query1="SELECT * FROM dbo.sunbakery1 WHERE id='$edit_record'";
 	$getResults= sqlsrv_query($conn,$query1);
@@ -74,7 +74,7 @@ echo "<script>alert($edit_record);</script>";
 	</body>
 </html>
 <?php
-	if(isset($_POST['update'])){
+/*	if(isset($_POST['update'])){
 	
 		$edit_record1 = $_GET['edit_form'];
 		
@@ -97,6 +97,6 @@ echo "<script>alert($edit_record);</script>";
 		/*if(mysql_query($query1))
 		{
 			echo "<script>window.open('view.php?updated=Record has been updated..!','_self')</script>";
-		}*/
-	}
+		}
+	}*/
 ?>
