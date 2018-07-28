@@ -45,7 +45,7 @@
             <tr> 
 				<td align="right">Product Ordered</td>
 				<td><value="<?php echo $productordered;?>">
-                    <select>
+                    <select name="product_ordered1">
                     <option>Select your product</option>
                 <option>Cakes</option>
                 <option>Cupcakes</option>
@@ -59,7 +59,7 @@
 			</tr>
             <tr> 
 				<td align="right">Product Quantity</td>
-				<td><input type="text" name="productquantity" value="<?php echo $productquantity;?>"></td>
+				<td><input type="text" name="productquantity1" value="<?php echo $productquantity;?>"></td>
 			</tr>
 				<tr>
 					<td colspan="5" align="center"><input type="submit" value="Update" name="update"></td>
@@ -83,6 +83,10 @@
     		$product_quantity = $_POST['productquantity1'];
 	  	
 	  	echo "$customer_name";
+	  	echo "$phone_number";
+	  	echo "$pickup_date ";
+	  	echo "$product_ordered";
+	  	echo "$product_quantity"; 
 		
 		/*$query2="UPDATE dbo.sunbakery1 SET customername='$customer_name', phonenumber='$phone_number', pickupdate='$pickup_date', 
 		productordered='$product_ordered', productquantity='$product_quantity' WHERE id='$edit_record1'";
