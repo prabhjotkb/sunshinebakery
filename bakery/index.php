@@ -24,7 +24,7 @@ if($pickupdate=='')
 	echo "<script>window.open('index.php?pickupdate=pick-up date is required','_self');</script>";
 	exit();
  }
-if($productordered=='null')
+if($productordered=='')
  {
 	echo "<script>window.open('index.php?productordered=product ordered is required','_self');</script>";
 	exit();
