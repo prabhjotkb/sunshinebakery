@@ -82,18 +82,12 @@
     		$product_ordered = $_POST['productordered1'];
     		$product_quantity = $_POST['productquantity1'];
 	  	
-	  	/*echo "$customer_name";
-	  	echo "$phone_number";
-	  	echo "$pickup_date ";
-	  	echo "$product_ordered";
-	  	echo "$product_quantity"; */
-		/*
-		$query2="UPDATE dbo.sunbakery1 SET customername='$customer_name', phonenumber='$phone_number', pickupdate='$pickup_date', 
-		productordered='$product_ordered', productquantity='$product_quantity' WHERE id='$edit_record1'";
+	  	
+		$query2="UPDATE dbo.sunbakery1 SET customername='$customer_name', phonenumber='$phone_number', pickupdate='$pickup_date',productordered='$product_ordered', productquantity='$product_quantity' WHERE id='$edit_record1'";
 		//Update dbo.u_reg set username='anjana',fname='vishkarma',rollno='1111'where rollno='123456';
 		$getResults1=sqlsrv_query($conn, $query2);
 		
-		echo "<script>";
+		/*echo "<script>";
         	echo "window.alert('Data Updated')
 		window.location.href='view.php';
 		</script>";*/
