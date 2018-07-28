@@ -2,14 +2,9 @@
 	include('config.php');
 	
 	$edit_record=$_GET['edit'];
-//echo "<script>alert($edit_record);</script>";
-   //echo $edit_record;
-//echo "<script>alert($getRes);</script>";
-$query="SELECT * FROM dbo.sunbakery1 WHERE id='$edit_record'";
+        $query="SELECT * FROM dbo.sunbakery1 WHERE id='$edit_record'";
+	$getResults=sqlsrv_query($conn,$query);
 
-$getResults=sqlsrv_query($conn,$query);
-
-     
 	while($row=sqlsrv_fetch_array($getResults, SQLSRV_FETCH_ASSOC))
 	{
    	 $edit_id = $_POST['id'];
@@ -76,7 +71,7 @@ $getResults=sqlsrv_query($conn,$query);
 	</body>
 </html>
 <?php
-/*	if(isset($_POST['update'])){
+ if(isset($_POST['update'])){
 	
 		$edit_record1 = $_GET['edit_form'];
 		
