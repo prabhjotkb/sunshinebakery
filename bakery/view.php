@@ -8,7 +8,7 @@
 		<?/*php echo @$_GET['updated']; ?> <?php echo @$_GET['logged']; */?>
 		
 			</font></center>
-		<br><br><table align="center" width='900' border='4'  bgcolor="yellow">
+		<br><br><table align="center" width='900' border='4'  bgcolor="skyblue">
 			<tr>
 			
 					<th colspan="20" align="center"><h1>Viewing all the record</h1></th>
@@ -54,7 +54,7 @@
 				<td><?php echo $pickupdate; ?></td>
 				<td><?php echo $productordered; ?></td>
 				<td><?php echo $productquantity; ?></td>
-				<td><a href='edit.php?edit=<?php echo $phonenumber; ?>'>Edit</a></td>
+				<td><a href='edit.php?edit=<?php echo $id; ?>'>Edit</a></td>
 				<td><a href ='delete.php?del=<?php echo $phonenumber; ?>'>Delete</a></td>
 				
 					</tr>
