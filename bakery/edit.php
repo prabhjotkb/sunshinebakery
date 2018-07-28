@@ -75,14 +75,16 @@
   if(isset($_POST['update'])){
 	
 		$edit_record1 = $_GET['edit_form'];
-		$id_d=$_POST[id1];
+		
 		$customer_name = $_POST['customername1'];
     		$phone_number = $_POST['phonenumber1'];
     		$pickup_date = $_POST['pickupdate1'];
     		$product_ordered = $_POST['productordered1'];
     		$product_quantity = $_POST['productquantity1'];
+	  	
+	  	echo "$customer_name";
 		
-		$query2="UPDATE dbo.sunbakery1 SET customername='$customer_name', phonenumber='$phone_number', pickupdate='$pickup_date', 
+		/*$query2="UPDATE dbo.sunbakery1 SET customername='$customer_name', phonenumber='$phone_number', pickupdate='$pickup_date', 
 		productordered='$product_ordered', productquantity='$product_quantity' WHERE id='$edit_record1'";
 		//Update dbo.u_reg set username='anjana',fname='vishkarma',rollno='1111'where rollno='123456';
 		$getResults1=sqlsrv_query($conn, $query2);
@@ -90,7 +92,7 @@
 		echo "<script>";
         	echo "window.alert('Data Updated')
 		window.location.href='view.php';
-		</script>";
+		</script>";*/
 		
 		/*if(mysql_query($query1))
 		{
