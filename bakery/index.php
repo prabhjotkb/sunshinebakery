@@ -77,8 +77,8 @@ $getResults= sqlsrv_query($conn, $tsql);
 					<td><input type="date" name="pickupdate"><font color="red"><?php echo @$_GET['pickupdate']; ?></font></td>
 				</tr>
 				 <tr >
-					<td align="right"><label>Product Ordered</label></td>
-					<td><input name="productordered"><font color="red"><?php echo @$_GET['productordered']; ?></font>
+					<td align="right"><label>Product Ordered:</label></td>
+					<td><font color="red"><?php echo @$_GET['productordered']; ?></font>
 						 <select>
                     <option>Select your product</option>
                 <option>Cakes</option>
@@ -93,7 +93,7 @@ $getResults= sqlsrv_query($conn, $tsql);
 				</tr>
 		
             			    <tr >
-					<td align="right"><label>Product Quantity</label></td>
+					<td align="right"><label>Product Quantity:</label></td>
 					<td><input type="text" name="productquantity"><font color="red"><?php echo @$_GET['productquantity']; ?></font></td>
 				</tr>
 				<tr>
