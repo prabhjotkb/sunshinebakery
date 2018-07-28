@@ -6,14 +6,14 @@
 	$getResults=sqlsrv_query($conn, $query);
        //echo $getResults;
 	while($row=sqlsrv_fetch_array( $getResults, SQLSRV_FETCH_ASSOC))
-	
+	{
    	 $edit_id = $row['id'];
    	 $customername=$row['customername'];
 	$phonenumber=$row['phonenumber'];
 	$pickupdate=$row['pickupdate'];	
    	$productordered=$row['productordered'];
    	$productquantity=$row['productquantity'];
-	
+	}
 
 ?>
 <html>
@@ -24,7 +24,7 @@
 	
 	<body>
 	<div class="container">
-		<form method="POST" action="edit.php?edit_form=<?php echo $id;?>">
+		<form method="POST" action="edit.php?edit_form=<?php echo $edit_id;?>">
 	
 			<table width="500" border="0" align="center">
 				<tr>	
