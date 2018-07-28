@@ -1,5 +1,5 @@
 <?php
-	include('config.php');
+	/*include('config.php');
 	$edit_id=$_GET['edit'];
         $query="SELECT * FROM dbo.sunbakery1 WHERE id='$edit_id'";
 
@@ -13,7 +13,7 @@
 	$phonenumber=$row['phonenumber'];
 	$pickupdate=$row['pickupdate'];	
    	$productordered=$row['productordered'];
-   	$productquantity=$row['productquantity'];
+   	$productquantity=$row['productquantity'];*/
 	
 
 ?>
