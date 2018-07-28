@@ -87,10 +87,10 @@
 		//Update dbo.u_reg set username='anjana',fname='vishkarma',rollno='1111'where rollno='123456';
 		$getResults1=sqlsrv_query($conn, $query2);
 		
-		/*echo "<script>";
+		echo "<script>";
         	echo "window.alert('Data Updated')
 		window.location.href='view.php';
-		</script>";*/
+		</script>";
 		
 		/*if(mysql_query($query1))
 		{
