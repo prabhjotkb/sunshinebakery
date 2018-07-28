@@ -21,6 +21,13 @@ header
 	background:black;
 	text-align:center;
 }
+  h1
+            {
+                color: wheat;
+                text-align: center;
+                font-family: serif;
+                font-size: 80px;
+            }
 .nav_right a
 {
 	color:#fff;
