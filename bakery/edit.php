@@ -70,8 +70,9 @@
 		</div>
 	</body>
 </html>
+
 <?php
- if(isset($_POST['update'])){
+/* if(isset($_POST['update'])){
 	
 		$edit_record1 = $_GET['edit_form'];
 		
