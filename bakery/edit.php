@@ -7,14 +7,11 @@
 	$query1="SELECT * FROM dbo.sunbakery1 WHERE id='$edit_record'";
 	$getResults= sqlsrv_query($conn,$query1);
 
-
+     echo "<script>alert($getResults);</script>";
 	while($row=sqlsrv_fetch_array($getResults, SQLSRV_FETCH_ASSOC))
 	{
    	 $edit_id = $_POST['id'];
    	 $customername=$_POST['customername'];
-		
-		echo "<script>alert($customername);</script>";
-		
 	$phonenumber=$_POST['phonenumber'];
 	$pickupdate=$_POST['pickupdate'];	
    	$productordered=$_POST['productordered'];
