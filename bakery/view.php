@@ -6,12 +6,12 @@
 	<div class="container">
 		<center><font color='red' size='6'><?php echo @$_GET['delete'];?>
 		<?php /*echo @$_GET['updated']; ?><?php echo @$_GET['logged']; */?>
-			<h1>Sunshine Bakery</h1>
+		
 			</font></center>
 		<br><br><table align="center" width='900' border='4'  bgcolor="yellow">
 			<tr>
 			
-					<th colspan="20" align="center"><h2>Viewing all the record</h2></th>
+					<th colspan="20" align="center"><h1>Viewing all the record</h1></th>
 				
 			</tr>
 			<tr align="center">
