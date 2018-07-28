@@ -5,12 +5,12 @@
 //echo "<script>alert($edit_record);</script>";
    //echo $edit_record;
 //echo "<script>alert($getRes);</script>";
-$que="SELECT * FROM dbo.sunbakery1 WHERE id='$edit_record'";
+$query="SELECT * FROM dbo.sunbakery1 WHERE id='$edit_record'";
 
-$getRes=sqlsrv_query($conn,$que);
+$getResults=sqlsrv_query($conn,$query);
 
      
-	while($row=sqlsrv_fetch_array($getRes, SQLSRV_FETCH_ASSOC))
+	while($row=sqlsrv_fetch_array($getResults, SQLSRV_FETCH_ASSOC))
 	{
    	 $edit_id = $_POST['id'];
    	 $customername=$_POST['customername'];
