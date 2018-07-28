@@ -5,7 +5,7 @@
 	<body>
 	<div class="container">
 		<center><font color='red' size='6'><?php echo @$_GET['delete'];?>
-		<?php echo @$_GET['updated']; ?> <?/*php echo @$_GET['logged']; */?>
+		<?/*php echo @$_GET['updated']; ?> <?php echo @$_GET['logged']; */?>
 		
 			</font></center>
 		<br><br><table align="center" width='900' border='4'  bgcolor="yellow">
