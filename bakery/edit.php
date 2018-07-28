@@ -26,10 +26,10 @@
 	<body>
 	<div class="container">
 		<form method="POST" action="edit.php?edit_form=<?php echo $id;?>">
-			<h1>Sunshine Bakery</h1>
+	
 			<table width="500" border="0" align="center">
 				<tr>	
-					<th colspan="4"><h2>Updating Form</h2></th>
+					<th colspan="4"><h1>Updating Form</h1></th>
 				</tr>
 				<tr >
 					<td align="right">Customer Name</td>
