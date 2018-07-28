@@ -59,10 +59,10 @@ $getResults= sqlsrv_query($conn, $tsql);
 	<div class="container">
 	
 		<form method="POST" action="index.php">
-			<h1>Sunshine Bakery</h1>
+			
 			<table  border="0" align="center">
 				<tr>	
-					<th colspan="6"><h2>Order Form</h2></th>
+					<th colspan="6"><h1>Order Form</h1></th>
 				</tr>
 				<tr >
 					<td align="right"><label>Customer Name:</label></td>
