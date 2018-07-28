@@ -78,7 +78,7 @@ $getResults= sqlsrv_query($conn, $tsql);
 				</tr>
 				 <tr >
 					<td align="right"><label>Product Ordered</label></td>
-					<td><input type="text" name="productordered"><font color="red"><?php echo @$_GET['productordered']; ?></font>
+					<td><input name="productordered"><font color="red"><?php echo @$_GET['productordered']; ?></font>
 						 <select>
                     <option>Select your product</option>
                 <option>Cakes</option>
