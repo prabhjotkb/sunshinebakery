@@ -1,7 +1,7 @@
 <?php
 	include('config.php');
-	$edit_record=$_GET['edit'];
-        $query="SELECT * FROM dbo.sunbakery1 WHERE id='$_GET['edit']'";
+	$edit_id=$_GET['edit'];
+        $query="SELECT * FROM dbo.sunbakery1 WHERE id='$edit_id'";
 	//$query="SELECT * FROM dbo.sunbakery1 WHERE id='$edit_record'";
 	$getResults=sqlsrv_query($conn, $query);
 
