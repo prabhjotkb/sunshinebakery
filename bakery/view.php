@@ -57,7 +57,6 @@
 				<td><a href='edit.php?edit=<?php echo $id; ?>'>Edit</a></td>
 				<td><a href ='delete.php?del=<?php echo $phonenumber; ?>'>Delete</a></td>
 				
-				
 					</tr>
 			<?php } ?>
 		</table>
