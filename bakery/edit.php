@@ -32,15 +32,15 @@
 				</tr>
 				<tr >
 					<td align="right">Customer Name</td>
-					<td><input type="text" name="customername" value="<?php echo $customername; ?>"></td>
+					<td><input type="text" name="customername1" value="<?php echo $customername; ?>"></td>
 				</tr>
 				<tr >
 				<td align="right">Phone Number</td>
-				<td><input type="text" name="phonenumber" value="<?php echo $phonenumber;?>"></td>
+				<td><input type="text" name="phonenumber1" value="<?php echo $phonenumber;?>"></td>
 			</tr>
             <tr> 
 				<td align="right">Pick-Up Date</td>
-				<td><input type="date" name="pickupdate" value="<?php echo $pickupdate;?>"></td>
+				<td><input type="date" name="pickupdate1" value="<?php echo $pickupdate;?>"></td>
 			</tr>
             <tr> 
 				<td align="right">Product Ordered</td>
