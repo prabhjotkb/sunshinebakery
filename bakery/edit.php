@@ -87,7 +87,7 @@
 	  	echo "$pickup_date ";
 	  	echo "$product_ordered";
 	  	echo "$product_quantity"; */
-		
+		/*
 		$query2="UPDATE dbo.sunbakery1 SET customername='$customer_name', phonenumber='$phone_number', pickupdate='$pickup_date', 
 		productordered='$product_ordered', productquantity='$product_quantity' WHERE id='$edit_record1'";
 		//Update dbo.u_reg set username='anjana',fname='vishkarma',rollno='1111'where rollno='123456';
