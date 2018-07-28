@@ -8,7 +8,7 @@
 		<?/*php echo @$_GET['updated']; ?> <?php echo @$_GET['logged']; */?>
 		
 			</font></center>
-		<br><br><table align="center" width='900' border='4'  bgcolor="cyan">
+		<br><br><table align="center" width='900' border='4'  bgcolor="brown">
 			<tr>
 			
 					<th colspan="20" align="center"><h1>Viewing all the record</h1></th>
