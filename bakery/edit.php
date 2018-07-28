@@ -12,6 +12,9 @@
 	{
    	 $edit_id = $_POST['id'];
    	 $customername=$_POST['customername'];
+		
+		echo "<script>alert($customername);</script>";
+		
 	$phonenumber=$_POST['phonenumber'];
 	$pickupdate=$_POST['pickupdate'];	
    	$productordered=$_POST['productordered'];
