@@ -4,13 +4,12 @@
 	$edit_record=$_GET['edit'];
 //echo "<script>alert($edit_record);</script>";
    //echo $edit_record;
-$sqlselect="SELECT * FROM dbo.sunbakery1";
-			$getRes= sqlsrv_query($conn, $sqlselect);
-/*$que="SELECT * FROM dbo.sunbakery1 WHERE id='$edit_record'";
+echo "<script>alert($getRes);</script>";
+$que="SELECT * FROM dbo.sunbakery1 WHERE id='$edit_record'";
 
 $getRes=sqlsrv_query($conn,$que);
-*/
-     echo "<script>alert($getRes);</script>";
+
+     
 	while($row=sqlsrv_fetch_array($getRes, SQLSRV_FETCH_ASSOC))
 	{
    	 $edit_id = $_POST['id'];
