@@ -44,7 +44,7 @@
 			</tr>
             <tr> 
 				<td align="right">Product Ordered</td>
-				<td>< value="<?php echo $productordered;?>">
+				<td><value="<?php echo $productordered;?>">
                     <select input name="productordered1">
                     <option>Select your product</option>
                 <option>Cakes</option>
