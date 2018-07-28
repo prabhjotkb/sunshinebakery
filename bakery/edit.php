@@ -2,7 +2,7 @@
 	include('config.php');
 	
 	$edit_record=$_GET['edit'];
-	$query="SELECT * FROM dbo.sunbakery1 WHERE phonenumber='$edit_record'";
+	$query="SELECT * FROM dbo.sunbakery1 WHERE id='$edit_record'";
 	$getResults=sqlsrv_query($conn, $query);
 
 	while($row=sqlsrv_fetch_array($getResults, SQLSRV_FETCH_ASSOC))
