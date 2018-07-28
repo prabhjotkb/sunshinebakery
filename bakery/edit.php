@@ -72,7 +72,7 @@
 </html>
 
 <?php
-/* if(isset($_POST['update'])){
+  if(isset($_POST['update'])){
 	
 		$edit_record1 = $_GET['edit_form'];
 		
@@ -95,8 +95,8 @@
 		/*if(mysql_query($query1))
 		{
 			echo "<script>window.open('view.php?updated=Record has been updated..!','_self')</script>";
-		}
-	}*/
+		}*/
+	}
 ?>
 
 
