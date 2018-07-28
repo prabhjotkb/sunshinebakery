@@ -4,7 +4,7 @@
 	$edit_record=$_GET['edit'];
 //echo "<script>alert($edit_record);</script>";
    //echo $edit_record;
-echo "<script>alert($getRes);</script>";
+//echo "<script>alert($getRes);</script>";
 $que="SELECT * FROM dbo.sunbakery1 WHERE id='$edit_record'";
 
 $getRes=sqlsrv_query($conn,$que);
