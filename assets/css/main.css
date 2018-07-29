@@ -14,6 +14,68 @@
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block;
 	}
+header .abc
+{
+	background:#1E90FF;
+	height:100px;
+	margin:0px;
+}
+.nav_right
+{
+	height:50px;
+	width:70px;
+	float:right;
+	margin-right:10px;	
+	background:black;
+	text-align:center;
+}
+.nav_right a
+{
+	color:#fff;
+	text-decoration:none;
+	font-family:arial;
+	line-height:50px;	
+}
+.nav_right a:hover{
+	color:red;
+	
+}
+nav
+{
+margin-top:-10px;
+margin-left:180px;		
+}
+nav ul
+{
+	margin:0px;
+	
+}
+nav ul li
+{
+	float:left;
+	list-style:none;
+	
+}
+nav ul li a 
+{
+	margin-top:50px;
+	text-decoration:none;
+	width:150px;
+	height:50px;
+	display:block;
+	line-height:50px;
+	font-family:arial;
+	font-size:18px;
+	background:#000;
+	color:#fff;
+	border-right:1px solid #fff;
+	text-align:center;
+	
+}
+nav ul li a :hover{
+background:#00BFFF;
+	
+}
 
 	body {
 		line-height: 1;
