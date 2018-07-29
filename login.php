@@ -11,7 +11,7 @@ $_SESSION['username']=$username;
     //  echo "<script>alert($password_var)</script>" ;
     if($username_var=="admin"&&$password_var=="admin"){
         
-        header('Location:view.php');
+        header('Location:bakery/view.php');
     }else{
         
            
