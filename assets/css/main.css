@@ -14,7 +14,11 @@
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block;
 	}
-.abc
+.container{
+	width:70%;
+	margin:auto;
+}
+h2
 {
 	background:#1E90FF;
 	height:100px;
