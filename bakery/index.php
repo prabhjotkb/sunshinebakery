@@ -43,8 +43,12 @@ $getResults= sqlsrv_query($conn, $tsql);
 
 //if($conn->query($que)=== true)
 //{
-	echo "<center><b><font color='white'>The follwing Data has been inserted into our databse</b></center>";
-
+	/*echo "<center><b><font color='white'>The follwing data has been inserted into our database</b></center>";*/
+	
+	echo "<script>";
+        echo "window.alert('Data has been inserterd into our database')
+	window.location.href='index.html';
+</script>";
 //}
 }
 ?>
