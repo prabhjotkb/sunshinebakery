@@ -22,7 +22,7 @@
 	top: 0;
 }
 
-#back
+.back
 {
 	bg-color:grey;
 }
@@ -42,7 +42,7 @@
 	font-weight: bold;
 	line-height: 47px;
 	width: 154px;
-	border-color: grey;
+	border-color: transparent;
 	border-style: none solid;
 	border-width: 1px;
 	text-align: center;
