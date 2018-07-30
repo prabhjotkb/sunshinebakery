@@ -14,7 +14,7 @@
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block;
 	}#navigation {
-	background-color:grey;
+	bg-color:grey;
 	height: 49px;
 	width: 960px;
 	margin: 0 auto;
