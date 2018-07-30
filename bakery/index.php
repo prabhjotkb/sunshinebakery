@@ -101,9 +101,8 @@ $getResults= sqlsrv_query($conn, $tsql);
 					<td><input type="text" name="productquantity"><font color="red"><?php echo @$_GET['productquantity']; ?></font></td>
 				</tr>
 				<tr>
-					<td colspan="5"><input type="submit" value="Submit" name="submit"></td>
-					<br>
-					<td colspan="5"><input type="button" <a href="index.html>>Home</td>
+					<td colspan="5" align="center><input type="submit" value="Submit" name="submit"></td>
+					
 				</tr>
 			</table>
 			
