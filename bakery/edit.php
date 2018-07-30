@@ -42,21 +42,19 @@
 				<td align="right">Pick-Up Date</td>
 				<td><input type="date" name="pickupdate1" value="<?php echo $pickupdate;?>"></td>
 			</tr>
-            <tr> 
-				<td align="right">Product Ordered</td>
-				<td><value="<?php echo $productordered;?>">
-                    <select input name="productordered1">
-                    <option>Select your product</option>
-                <option>Cakes</option>
+            <tr >
+					<td align="right">Product Ordered</td>
+					<td><select name="productordered1">
+						<option value='<?php echo $productordered; ?>'><?php echo $productordered; ?></option>
+						<option>Cakes</option>
                 <option>Cupcakes</option>
                 <option>Paneer Patties</option>
                 <option>Allu Patties</option>
                 <option>Chocolate Pasteries</option>
                 <option>Pineapple Pasteries</option>
                 <option>Bakery Biscuits</option>
-                </select>
-                </td>
-			</tr>
+					</select></td>
+				</tr>
             <tr> 
 				<td align="right">Product Quantity</td>
 				<td><input type="text" name="productquantity1" value="<?php echo $productquantity;?>"></td>
