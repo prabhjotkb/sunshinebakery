@@ -4,10 +4,12 @@
 	</head>
 	<body>
 	<div class="container">
+		<?php include 'header.php'?>
 		<center><font color='red' size='6'><?php echo @$_GET['delete'];?>
 		<?/*php echo @$_GET['updated']; ?> <?php echo @$_GET['logged']; */?>
 		
 			</font></center>
+		<a href="logout.php">Logout</a>
 		<br><br><table align="center" width='900' border='4'  bgcolor="yellow">
 			<tr>
 			
