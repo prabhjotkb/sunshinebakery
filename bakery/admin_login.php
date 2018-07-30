@@ -3,18 +3,18 @@ session_start();
 ?>
 <html>
 	<head>
-		<title>Admin Pane</title>
+		<title>Admin Panel</title>
 		<link rel="stylesheet" href="style.css">
 	</head>
 	
 	<body>
 	<div class="container">
-	<?php include 'header.php'?>
+	
 	
 		<form method="POST" action="admin_login.php">
 			<table border="0" align="center">
 				<tr>	
-					<th colspan="6"><h1>Admin Panel Form</h1></th>
+					<th colspan="6"><h1>Log In Form</h1></th>
 				</tr>
 				<tr >
 					<td align="right"><label>User Name:</label></td>
@@ -32,7 +32,6 @@ session_start();
 			
 		</form>
 		<center><?php echo @$_GET['error'] ?></center>
-		<?php include 'footer.php'  ?>
         </div>
 	</body>
 </html>
@@ -41,8 +40,7 @@ session_start();
 
 <?php
 
-	$con=mysql_connect("localhost","root","");
-	$db=mysql_select_db('students',$con);
+	include('config.php');
 		if(isset($_POST['login'])){
 			$admin_name=$_SESSION['admin_name']=$_POST['admin_name'];
 			$admin_pass=$_POST['admin_pass'];
