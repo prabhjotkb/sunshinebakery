@@ -14,7 +14,7 @@
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block;
 	}#navigation {
-	background: url(../images/bg-navigation.png) no-repeat;
+	background-color:grey;
 	height: 49px;
 	width: 960px;
 	margin: 0 auto;
@@ -22,10 +22,7 @@
 	top: 0;
 }
 
-.back
-{
-	bg-color:grey;
-}
+
 #navigation ul {
 	display: inline-block;
 	list-style: none;
