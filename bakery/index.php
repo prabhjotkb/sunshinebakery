@@ -101,7 +101,6 @@ $getResults= sqlsrv_query($conn, $tsql);
 				</tr>
 				<tr>
 					<td colspan="5" align="center"><input type="submit" value="Submit" name="submit"></td>
-					<td colspan="5" align="center"><input type="submit" value="Submit" name="home" onclick="index.html"></td>
 				</tr>
 			</table>
 			
