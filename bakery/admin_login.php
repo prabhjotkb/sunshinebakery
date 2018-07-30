@@ -41,7 +41,7 @@
 
 	include('config.php');
 		if(isset($_POST['login'])){
-			$admin_name=$_SESSION['admin_name']=$_POST['admin_name'];
+			$admin_name=$_POST['admin_name'];
 			$admin_pass=$_POST['admin_pass'];
 			
 			$query="select * from login where user_name='$admin_name' AND user_password='$admin_pass'";
