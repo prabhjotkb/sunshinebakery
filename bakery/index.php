@@ -62,7 +62,7 @@ $getResults= sqlsrv_query($conn, $tsql);
 	<div class="container">
 		
 		<form method="POST" action="index.php">
-			
+			<br><br><br>
 			<table  border="0" align="center">
 				<tr>	
 					<th colspan="6"><h1>Order Form</h1></th>
