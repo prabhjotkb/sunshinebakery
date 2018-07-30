@@ -57,7 +57,7 @@ $getResults= sqlsrv_query($conn, $tsql);
 	
 	<body>
 	<div class="container">
-	
+		<?php include 'header.php'?>
 		<form method="POST" action="index.php">
 			
 			<table  border="0" align="center">
