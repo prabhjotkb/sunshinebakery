@@ -57,10 +57,10 @@ $getResults= sqlsrv_query($conn, $tsql);
 	
 	<body>
 	<div class="container">
-		<?php include 'header.php'?>
+		
 		<form method="POST" action="index.php">
 			
-			<table  border="0" align="center">
+			<center><table  border="0" align="center">
 				<tr>	
 					<th colspan="6"><h1>Order Form</h1></th>
 				</tr>
@@ -100,7 +100,7 @@ $getResults= sqlsrv_query($conn, $tsql);
 					<td colspan="5" align="center"><input type="submit" value="Submit" name="submit"></td>
 				</tr>
 			</table>
-			
+			</center>
 		</form>
         </div>
 	</body>
