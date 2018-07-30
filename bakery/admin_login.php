@@ -49,11 +49,11 @@
 			
 			if(mysql_num_rows($run)>0){
 				
-				echo "<script>window.open('view.php?logged=logged in successfully...!','_self')</script>";
+				echo "<script>window.open('view.php?logged=Logged in successfully...!','_self')</script>";
 			}
 			else
 			{
-				echo "<script>alert('Password or User Name is incorrect!')</script>";
+				echo "<script>alert('User Name or Password is incorrect!')</script>";
 			}
 		}
 ?>
