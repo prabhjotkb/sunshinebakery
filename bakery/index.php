@@ -102,7 +102,9 @@ $getResults= sqlsrv_query($conn, $tsql);
 				</tr>
 				<tr>
 					<td colspan="5" align="center"><input type="submit" value="Submit" name="submit"></td>
-				</tr>
+					<a href="index.html"><td colspan="5" align="center"><input type="button" value="Home" name="Home"></td>
+					</a>
+						</tr>
 			</table>
 			
 		</form>
