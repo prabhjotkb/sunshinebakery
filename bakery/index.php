@@ -47,7 +47,6 @@ $getResults= sqlsrv_query($conn, $tsql);
 	
 	echo "<script>";
         echo "window.alert('Data has been inserterd into our database')
-	window.location.href='sunshinebakery/index.html';
 </script>";
 //}
 }
