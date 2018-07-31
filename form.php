@@ -59,7 +59,7 @@ $getResults= sqlsrv_query($conn, $tsql);
 	</head>
 	
 	<body>
-		<a href="index.html"><input type="button">HOME</a>
+		<a href="index.html"><input type="button" name="HOME></a>
 		<br><br>
 	<div class="container">
 		
