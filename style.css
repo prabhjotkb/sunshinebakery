@@ -99,7 +99,7 @@ select {
     border-radius: 4px;
     background-color: #f1f1f1;
 } 
-input[type=button], input[type=submit], input[type=reset] {
+input[type=button], input[type=submit], input[type=reset], input[type=button] {
     border-radius: 4px;
 		          border: 0;
 		          cursor: pointer;
