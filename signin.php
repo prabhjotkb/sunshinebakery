@@ -15,6 +15,7 @@
 <!-- //web font -->
 </head>
 <body>
+	<br>
 	<div class="container">
 					
 				<form action="signin.php" method="post">
@@ -25,7 +26,7 @@
 						<input type="password" name="admin_pass" placeholder="Password" required=""> 
 					</div> 
 					
-					<input type="submit" name="login_btn" value="Sign In">
+					<center><input type="submit" name="login_btn" value="Sign In"></center>
 				</form>
 			</div>  
 		</div>	
