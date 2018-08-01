@@ -19,11 +19,11 @@
 					
 					<div class="form-w3step1">
 						<input type="text" name="Name_" placeholder="Your Name" required=""> 
-						<input type="email" class="email agileits-btm" name="Email_" placeholder="Email" required=""> 
+						<input type="text" class="email agileits-btm" name="Email_" placeholder="Email" required=""> 
 					</div> 
 					
 					<div class="form-w3step1">  
-						<input type="text" name="Username_" placeholder="User Name" required="">
+						<input type="text" name="Username_" placeholder="Username" required="">
 						<input type="password" name="Password_" placeholder="Password" required="">
 						<input type="password" class="agileits-btm" name="confirmpassword_" placeholder="Confirm Password" required="">
 					</div>
@@ -36,7 +36,7 @@
 						<input type="checkbox" id="brand2" value="">
 						<label for="brand2"><span></span>I accept the terms of Use</label> 
 					</div>  
-					<input type="submit" value="SUBMIT" name="submit">
+					<center><input type="submit" value="SUBMIT" name="submit"></center>
 				</form>
 			</div>  
 		</div>	
