@@ -6,26 +6,24 @@
 <link href="view.css" rel="stylesheet" type="text/css" media="all" />
 </head>
 <body>
-	
-	<div class="main main-agileits">
-		<h1>Client Information</h1>
-		<div class="main-agilerow"> 
-			<div class="signup-wthreetop">
-				<h2>Welcome to Info</h2>
-				
-			</div>	
-			<div class="contact-wthree">
-				<form action="#" method="post">
+	<div class="container">
 					
-					  <table>
-		<tr class="signup-wthreetop p">
+					  <table align="center" width='900' border='4'  bgcolor="yellow">
+						  
+			<tr>
+			
+					<th colspan="20" align="center"><h1>Viewing all the record</h1></th>
+				
+			</tr>
+		<tr align="center">
                         <th>ID</th>
                         <th>Name</th>
                         <th>Email</th>
                        	<th>Password</th>
                         <th>Mobile Number</th>
-                        <th>Delete</th>
 			<th>Edit</th>
+                        <th>Delete</th>
+			
 		 </tr>
 			    <?php
 			
@@ -54,11 +52,6 @@
 			 <?php } ?> 
                         </table>
 				</form>
-			</div>  
-		</div>	
-	</div>	
-	
-
-	
+	</div>		
 </body>
 </html>
