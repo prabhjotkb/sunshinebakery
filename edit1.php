@@ -39,11 +39,10 @@ $edit_record=$_GET['edit'];
 <body>
 	<div class="container">
 				<form action="edit1.php?edit_form=<?php echo $id;?>" method="post">
-					<h1>Updating Form</h1>
+					<center><h1>Updating Form</h1></center>
 					
-					<div class="form-w3step1">
 						<input type="text" name="Name" value='<?php echo $name_; ?>' required=""> 
-						<input type="email" class="email agileits-btm" value='<?php echo $email; ?>' name="Email"  required=""> 
+						<input type="text" class="email agileits-btm" value='<?php echo $email; ?>' name="Email"  required=""> 
 					</div> 
 					
 					<div class="form-w3step1">  
