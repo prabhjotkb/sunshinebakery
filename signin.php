@@ -7,7 +7,7 @@
 <meta name="keywords" content="Client Signup Form template Responsive, Login form web template,Flat Pricing tables,Flat Drop downs  Sign up Web Templates, Flat Web Templates, Login sign up Responsive web template, SmartPhone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- Custom Theme files -->
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="style.css" rel="stylesheet" type="text/css" media="all" />
 <!-- //Custom Theme files -->
 <!-- web font -->
 <link href="//fonts.googleapis.com/css?family=Old+Standard+TT:400,400i,700" rel="stylesheet">
@@ -38,9 +38,6 @@
 	</div>	
 	<!-- //main -->
 	<!-- copyright -->
-	<div class="w3copyright-agile">
-		<p>© 2017 Client Signup Form. All rights reserved </p>
-	</div>
 	
 </body>
 </html>
@@ -55,7 +52,7 @@ $_SESSION['username']=$username;
   //  echo "<script>alert($username_var)</script>" ;
     
     //  echo "<script>alert($password_var)</script>" ;
-    if($username_var=="admin"&&$password_var=="admin"){
+    if($username_var=="prabhjot"&&$password_var=="prabhjot"){
         
         header('Location:view1.php');
     }else{
