@@ -72,7 +72,10 @@ $row=sqlsrv_fetch_array($result);
 }
 else{
    // echo "<script>alert('Login Failed!');</script>";
-    header('Location:signin.php');
+	echo "<script>";
+        echo "window.alert('Login Failed!!')
+</script>";
+    header('Location:index.html');
 }
     }
 }
