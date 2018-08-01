@@ -38,9 +38,7 @@
 		</div>	
 	</div>	
 	
-	<div class="w3copyright-agile">
-		<p>© 2017 Client Signup Form. All rights reserved</p>
-	</div>
+	
 	
 </body>
 </html>
@@ -62,6 +60,9 @@ include('config.php');
      $racc_address=$_POST['Youraddress_'];
      $que="INSERT INTO dbo.log_u (Name_,Email_,Username_,Password_,confirmpassword_,Number_,Youraddress_)VALUES ('$racc_name','$racc_email','$racc_username','$racc_pass','$racc_confirm','$racc_number','$racc_address')";
 	$getResult=sqlsrv_query($conn, $que);
-	echo "Inserted data into database successfully!";
+
+	echo "<script>";
+        echo "window.alert('Your order has been taken!')
+</script>";
 }
 ?>
