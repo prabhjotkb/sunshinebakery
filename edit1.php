@@ -31,22 +31,15 @@ $edit_record=$_GET['edit'];
 <meta name="keywords" content="Client Signup Form template Responsive, Login form web template,Flat Pricing tables,Flat Drop downs  Sign up Web Templates, Flat Web Templates, Login sign up Responsive web template, SmartPhone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="style.css" rel="stylesheet" type="text/css" media="all" />
 
 <link href="//fonts.googleapis.com/css?family=Old+Standard+TT:400,400i,700" rel="stylesheet">
 <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
 </head>
 <body>
-	
-	<div class="main main-agileits">
-		<h1>User Information</h1>
-		<div class="main-agilerow"> 
-			<div class="signup-wthreetop">
-				<h2>Edit Details</h2>
-				
-			</div>	
-			<div class="contact-wthree">
+	<div class="container">
 				<form action="edit1.php?edit_form=<?php echo $id;?>" method="post">
+					<h1>Updating Form</h1>
 					
 					<div class="form-w3step1">
 						<input type="text" name="Name" value='<?php echo $name_; ?>' required=""> 
@@ -70,9 +63,7 @@ $edit_record=$_GET['edit'];
 		</div>	
 	</div>	
 	
-	<div class="w3copyright-agile">
-		<p>© 2017 Client Signup Form. All rights reserved</p>
-	</div>
+	
 	
 </body>
 </html>
