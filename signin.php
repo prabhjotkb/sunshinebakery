@@ -15,16 +15,10 @@
 <!-- //web font -->
 </head>
 <body>
-	<!-- main -->
-	<div class="main main-agileits">
-		<h1>User Sign In </h1>
-		<div class="main-agilerow"> 
-			<div class="signup-wthreetop">
-				<h2>Welcome to Sign In</h2>
-				
-			</div>	
-			<div class="contact-wthree">
+	<div class="container">
+					
 				<form action="signin.php" method="post">
+					<center><h1>Log In Form</h1></center>
 					
 					<div class="form-w3step1">
 						<input type="text" name="admin_name" placeholder="Username" required=""> 
