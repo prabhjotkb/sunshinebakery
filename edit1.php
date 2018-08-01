@@ -56,7 +56,7 @@ $edit_record=$_GET['edit'];
 						
 					</div>
 					  
-					<input type="submit" value="Update" name="update">
+					<center><input type="submit" value="Update" name="update"></center>
 				</form>
 			</div>  
 		</div>	
