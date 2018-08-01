@@ -6,6 +6,8 @@
 <link href="style.css" rel="stylesheet" type="text/css" media="all" />
 </head>
 <body>
+		<a href="index.html"><input type="button" name="HOME" value="home"></a>
+	<br><br><br>
 	<div class="container">
 					
 					  <table align="center" width='900' border='4'  bgcolor="yellow">
