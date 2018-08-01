@@ -11,7 +11,7 @@
 	<div class="container">
 		
 				<form action="form1.php" method="post">
-					<h1>Client's Signup Form</h1>
+					<center><h1>Client's Sign Up Form</h1></center>
 					
 					<div class="form-w3step1">
 						<input type="text" name="Name_" placeholder="Your Name" required=""> 
