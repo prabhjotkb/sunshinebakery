@@ -7,13 +7,11 @@
 </head>
 <body>
 	<a href="index.html"><input type="button" name="HOME" value="home"></a>
-	<br>
-		<h1>Client Signup Form</h1>
-				<h2>Welcome to Registration</h2>
-				
-			</div>	
-			<div class="contact-wthree">
+	<br><br>
+	<div class="container">
+		
 				<form action="form1.php" method="post">
+					<h1>Client's Signup Form</h1>
 					
 					<div class="form-w3step1">
 						<input type="text" name="Name_" placeholder="Your Name" required=""> 
