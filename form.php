@@ -11,27 +11,27 @@ include('config.php');
  
  if($customername=='')
  {
-	echo "<script>window.open('index.php?customername=customer name is required','_self');</script>";
+	echo "<script>window.open('form.php?customername=customer name is required','_self');</script>";
 	exit();
  }
  if($phonenumber=='')
  {
-	echo "<script>window.open('index.php?phonenumber=phone number is required','_self');</script>";
+	echo "<script>window.open('form.php?phonenumber=phone number is required','_self');</script>";
 	exit();
  }
 if($pickupdate=='')
  {
-	echo "<script>window.open('index.php?pickupdate=pick-up date is required','_self');</script>";
+	echo "<script>window.open('form.php?pickupdate=pick-up date is required','_self');</script>";
 	exit();
  }
 if($productordered=='null')
  {
-	echo "<script>window.open('index.php?productordered=product ordered is required','_self');</script>";
+	echo "<script>window.open('form.php?productordered=product ordered is required','_self');</script>";
 	exit();
  }
 if($productquantity=='')
  {
-	echo "<script>window.open('index.php?productquantity=product quantity is required','_self');</script>";
+	echo "<script>window.open('form.php?productquantity=product quantity is required','_self');</script>";
 	exit();
  }
 
@@ -65,7 +65,7 @@ $getResults= sqlsrv_query($conn, $tsql);
 		<br><br>
 	<div class="container">
 		
-		<form method="POST" action="index.php">
+		<form method="POST" action="form.php">
 			
 			<table  border="0" align="center">
 				<tr>	
