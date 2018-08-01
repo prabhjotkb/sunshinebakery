@@ -47,7 +47,7 @@ $_SESSION['username']=$username;
   //  echo "<script>alert($username_var)</script>" ;
     
     //  echo "<script>alert($password_var)</script>" ;
-    if($username_var=="prabhjot"&&$password_var=="prabhjot"){
+    if($username_var=="adminname"&&$password_var=="adminpass"){
         
         header('Location:view1.php');
     }else{
