@@ -57,7 +57,7 @@ $_SESSION['username']=$username;
 $result=sqlsrv_query($conn,$queryS);
 $row=sqlsrv_fetch_array($result);
     
-     if($row['username']==$username_var && $row['password_']==$password_var)
+        if($row['username']==$username_var && $row['password_']==$password_var)
     {
    
         
@@ -65,10 +65,7 @@ $row=sqlsrv_fetch_array($result);
         header('Location:view1.php');
 }
 else{
-   // echo "<script>alert('Login Failed!');</script>";
-	echo "<script>";
-        echo "window.alert('Login Failed!!')
-</script>";
+   echo "<script>alert('Login Failed!');</script>";
     header('Location:index.html');
 }
     }
