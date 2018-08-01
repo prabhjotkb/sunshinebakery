@@ -57,13 +57,7 @@ $_SESSION['username']=$username;
 $result=sqlsrv_query($conn,$queryS);
 $row=sqlsrv_fetch_array($result);
     
-         if($username_var==null || $username_var=="" && $password_var==null || $password_var=="")
-         {
-    echo "<script>alert('Please enter a valid Username or Password!')</script>";
-            }
-       
-    
-    else if($row['username']==$username_var && $row['password_']==$password_var)
+     if($row['username']==$username_var && $row['password_']==$password_var)
     {
    
         
