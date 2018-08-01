@@ -62,7 +62,7 @@ include('config.php');
 	$getResult=sqlsrv_query($conn, $que);
 
 	echo "<script>";
-        echo "window.alert('Your order has been taken!')
+        echo "window.alert('Your data has been inserted into our database!')
 </script>";
 }
 ?>
