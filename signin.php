@@ -71,9 +71,8 @@ $row=sqlsrv_fetch_array($result);
         header('Location:view1.php');
 }
 else{
-   echo "<script>"
-	   echo "window.alert('Login Failed!')</script>";
-    header('Location:index.html');
+// echo "<script>alert('Login Failed!');</script>";
+    header('Location:signin.php');
 }
     }
 }
