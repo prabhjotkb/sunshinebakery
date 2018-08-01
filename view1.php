@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="css/view.css" rel="stylesheet" type="text/css" media="all" />
+<link href="view.css" rel="stylesheet" type="text/css" media="all" />
 </head>
 <body>
 	
@@ -58,9 +58,7 @@
 		</div>	
 	</div>	
 	
-	<div class="w3copyright-agile">
-		<p>© 2017 Client Signup Form. All rights reserved</p>
-	</div>
+
 	
 </body>
 </html>
