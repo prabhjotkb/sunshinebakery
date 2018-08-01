@@ -46,7 +46,7 @@ $getResults= sqlsrv_query($conn, $tsql);
 	/*echo "<center><b><font color='white'>The follwing data has been inserted into our database</b></center>";*/
 	
 	echo "<script>";
-        echo "window.alert('Data has been inserterd into our database')
+        echo "window.alert('Your order has been taken!')
 </script>";
 //}
 }
