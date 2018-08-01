@@ -6,11 +6,9 @@
 <link href="style.css" rel="stylesheet" type="text/css" media="all" />
 </head>
 <body>
-	
-	<div class="main main-agileits">
+	<a href="index.html"><input type="button" name="HOME" value="home"></a>
+	<br>
 		<h1>Client Signup Form</h1>
-		<div class="main-agilerow"> 
-			<div class="signup-wthreetop">
 				<h2>Welcome to Registration</h2>
 				
 			</div>	
